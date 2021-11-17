@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>A Challenge!</title>
+    <link rel="stylesheet" href="more-sink.css" media="screen">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="column column-challenge">
+            The Challenge
+            <div id="challenge"></div>
+        </div>
+        <div class="column column-buttons">
+            Buttons!
+            <div class="button-group">
+                <button class="button good" onclick="runCode()">Run My Code</button>
+                <button class="button neutral" onclick="clearActualOutput()">Clear Output</button>
+                <button id="test-button" class="button evil" onclick="runTests()">Run Tests</button>
+            </div>
+        </div>
+        <div class="column column-tests">
+            Test Results
+            <div id='tests'></div>
+        </div>
+        <div class="column column-code">
+            Code Here
+            <div id="editor"></div>
+        </div>
+        <div class="column column-output">
+            Your output
+            <div id="actual"></div>
+        </div>
+        <div class="column column-output">
+            Expected output
+            <div id="expected">
+                <div class="button-group">
+                    <button class="button evil" onclick="revealExpectedOutput()">Reveal</button>
+                </div>
+            </div>
+        </div>
+
+        <script src="ace-builds/src-min-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
+        <script src="kitchen-sink.js" type="text/javascript" charset="utf-8"></script>
+</body>
+
+</html>

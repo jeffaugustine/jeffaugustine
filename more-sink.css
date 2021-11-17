@@ -1,0 +1,147 @@
+/* Ace */
+#editor,
+#challenge,
+#expected,
+#actual {
+    border: 1px solid #272822;
+    margin: auto;
+    height: 90%;
+    width: 100%;
+}
+
+/* Tests */
+.pass {
+    font-weight: bolder;
+    color: rgb(50, 170, 50);
+}
+
+.fail {
+    font-weight: bolder;
+    color: rgb(170, 0, 0);
+}
+
+/* Page Flex */
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 1.3em;
+    color: #ccc;
+    background: #000;
+}
+
+.container {
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column {
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.column-challenge {
+    height: 20%;
+    flex-basis: 50%;
+}
+
+.column-buttons {
+    height: 20%;
+    flex-basis: 25%;
+}
+
+.column-tests {
+    height: 20%;
+    flex-basis: 25%;
+}
+
+.column-code {
+    height: 80%;
+    flex-basis: 50%;
+}
+
+.column-output {
+    height: 80%;
+    flex-basis: 25%;
+}
+
+.column:nth-child(1) {
+    background: #39918c;
+}
+
+.column:nth-child(2) {
+    background: #a7978b;
+}
+
+.column:nth-child(3) {
+    background: #666;
+}
+
+.column:nth-child(4) {
+    background: #2f435a;
+}
+
+.column:nth-child(5) {
+    background: #533440;
+}
+
+.column:nth-child(6) {
+    background: #ab6b51;
+}
+
+/* Buttons */
+.button-group .button {
+    color: lightgray;
+    border: 1px solid lightgray;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    width: 200px;
+    display: block;
+}
+
+.good {
+    background-color: rgb(0, 170, 0);
+}
+
+.button-group .good:hover {
+    background-color: rgb(0, 100, 0);
+}
+
+.button-group .good:active {
+    background-color: rgb(0, 180, 0);
+    transform: translateY(4px);
+}
+
+.evil {
+    background-color: rgb(170, 0, 0);
+}
+
+.button-group .evil:hover {
+    background-color: rgb(100, 0, 0);
+}
+
+.button-group .evil:active {
+    background-color: rgb(180, 0, 0);
+    transform: translateY(4px);
+}
+
+.neutral {
+    background-color: rgb(100, 100, 100);
+}
+
+.button-group .neutral:hover {
+    background-color: rgb(80, 80, 80);
+}
+
+.button-group .neutral:active {
+    background-color: rgb(110, 110, 110);
+    transform: translateY(4px);
+}
