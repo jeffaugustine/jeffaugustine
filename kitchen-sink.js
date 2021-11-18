@@ -36,8 +36,9 @@ var actualOutputResults = [];
 function customLog(words) {
     actualOutputResults.push(words);
 }
-var rerunTests = false;
+var rerunTests = true;
 
+// Button Call
 function runCode() {
     console.debug('Run My Code');
 
@@ -56,10 +57,13 @@ function runCode() {
         actual.getSession().setValue(this.error.toString());
     }
 
-    if (rerunTests) {
-        tests();
-    }
+    // Uncomment to allow toggle testing
+    // if (rerunTests) {
+    tests();
+    // }
 }
+
+// Button Call
 function runTests() {
     console.debug('Run Tests');
     rerunTests = !rerunTests;
@@ -76,7 +80,7 @@ function runTests() {
     }
 }
 
-
+// Button Call
 function clearActualOutput() {
     console.debug('Clear Output');
     actual.getSession().setValue('');

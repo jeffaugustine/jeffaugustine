@@ -9,6 +9,35 @@
     width: 100%;
 }
 
+.fade {
+	opacity: 1;
+	animation-name: zeroToAHundred;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+}
+
+.fade1 {
+	animation-duration: 1s;
+}
+
+.fade2 {
+	animation-duration: 2s;
+}
+
+.fade3 {
+	animation-duration: 3s;
+}
+
+@keyframes zeroToAHundred {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+
 /* Tests */
 .pass {
     font-weight: bolder;
@@ -17,7 +46,7 @@
 
 .fail {
     font-weight: bolder;
-    color: rgb(170, 0, 0);
+    color: rgb(170, 50, 50);
 }
 
 /* Page Flex */
@@ -48,29 +77,41 @@ body {
 .column-challenge {
     height: 20%;
     flex-basis: 50%;
+    background-color: #181818;
 }
 
 .column-buttons {
     height: 20%;
     flex-basis: 25%;
+    background-color: #121212;
+    align-content: center !important
 }
 
 .column-tests {
     height: 20%;
     flex-basis: 25%;
+    background-color: #181818;
 }
 
 .column-code {
     height: 80%;
     flex-basis: 50%;
+    background-color: #181818;
 }
 
-.column-output {
+.column-actual-output {
     height: 80%;
     flex-basis: 25%;
+    background-color: #121212;
 }
 
-.column:nth-child(1) {
+.column-expected-output {
+    height: 80%;
+    flex-basis: 25%;
+    background-color: #181818;
+}
+
+/* .column:nth-child(1) {
     background: #39918c;
 }
 
@@ -92,23 +133,23 @@ body {
 
 .column:nth-child(6) {
     background: #ab6b51;
-}
+} */
 
 /* Buttons */
 .button-group .button {
     color: lightgray;
-    border: 1px solid lightgray;
+    border: 1px solid grey;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
     font-size: 16px;
     cursor: pointer;
-    width: 200px;
-    display: block;
+    width: 100%;
+    height: 50%;
 }
 
 .good {
-    background-color: rgb(0, 170, 0);
+    background-color: rgb(0, 150, 0);
 }
 
 .button-group .good:hover {
@@ -120,8 +161,9 @@ body {
     transform: translateY(4px);
 }
 
-.evil {
-    background-color: rgb(170, 0, 0);
+/* Not colorblind friendly */
+/* .evil {
+    background-color: rgb(150, 0, 0);
 }
 
 .button-group .evil:hover {
@@ -131,7 +173,7 @@ body {
 .button-group .evil:active {
     background-color: rgb(180, 0, 0);
     transform: translateY(4px);
-}
+} */
 
 .neutral {
     background-color: rgb(100, 100, 100);

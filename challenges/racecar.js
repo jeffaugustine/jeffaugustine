@@ -49,5 +49,8 @@ var c = 'Q2Fy';
 var rc = 'UmFjZUNhcg==';
 var hl = 'MTAwIGxpbmVz';
 setTimeout(() => {
+    runCode();
     initTests();
+    tests();
+    clearActualOutput();
 }, 10);
