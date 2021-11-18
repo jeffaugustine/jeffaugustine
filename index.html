@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <link rel="icon" type="image/jpg" href="favicon.ico"/>
     <title>A Challenge!</title>
     <link rel="stylesheet" href="more-sink.css" media="screen">
 </head>
@@ -9,35 +10,35 @@
 <body>
 
     <div class="container">
-        <div class="column column-challenge">
+        <div class="column column-challenge fade fade1">
             The Challenge
             <div id="challenge"></div>
         </div>
-        <div class="column column-buttons">
-            Buttons!
+        <div class="column column-buttons fade fade2">
+            Buttons
             <div class="button-group">
-                <button class="button good" onclick="runCode()">Run My Code</button>
+                <button class="button good" onclick="runCode()">Run</button>
                 <button class="button neutral" onclick="clearActualOutput()">Clear Output</button>
-                <button id="test-button" class="button evil" onclick="runTests()">Run Tests</button>
+                <!-- <button id="test-button" class="button evil" onclick="runTests()">Run Tests</button> -->
             </div>
         </div>
-        <div class="column column-tests">
+        <div class="column column-tests fade fade3">
             Test Results
             <div id='tests'></div>
         </div>
-        <div class="column column-code">
+        <div class="column column-code fade fade1">
             Code Here
             <div id="editor"></div>
         </div>
-        <div class="column column-output">
+        <div class="column column-actual-output fade fade2">
             Your output
             <div id="actual"></div>
         </div>
-        <div class="column column-output">
+        <div class="column column-expected-output fade fade3">
             Expected output
             <div id="expected">
                 <div class="button-group">
-                    <button class="button evil" onclick="revealExpectedOutput()">Reveal</button>
+                    <button class="button neutral" onclick="revealExpectedOutput()">Reveal</button>
                 </div>
             </div>
         </div>
