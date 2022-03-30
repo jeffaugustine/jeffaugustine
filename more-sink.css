@@ -10,31 +10,32 @@
 }
 
 .fade {
-	opacity: 1;
-	animation-name: zeroToAHundred;
-	animation-iteration-count: 1;
-	animation-timing-function: ease-in;
+    opacity: 1;
+    animation-name: zeroToAHundred;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
 }
 
 .fade1 {
-	animation-duration: 1s;
+    animation-duration: 1s;
 }
 
 .fade2 {
-	animation-duration: 2s;
+    animation-duration: 2s;
 }
 
 .fade3 {
-	animation-duration: 3s;
+    animation-duration: 3s;
 }
 
 @keyframes zeroToAHundred {
-	0% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 1;
-	}
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 
@@ -186,4 +187,18 @@ body {
 .button-group .neutral:active {
     background-color: rgb(110, 110, 110);
     transform: translateY(4px);
+}
+
+
+.c-default {
+    cursor: default;
+    user-select: none;
+}
+
+.c-help {
+    cursor: help;
+}
+
+.c-not-allowed {
+    cursor: not-allowed;
 }
