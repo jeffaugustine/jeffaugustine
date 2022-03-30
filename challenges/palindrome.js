@@ -12,9 +12,9 @@ function tests() {
         duplicates[x] = (duplicates[x] || 0) + 1;
     });
 
-    testA = isPalindrome('intranet') === false;
-    testB = isPalindrome('112211') === true;
-    testC = isPalindrome('racecar') === true;
+    testA = isPalindrome(ab('aW50cmFuZXQ=')) === false;
+    testB = isPalindrome(ab('MTEyMjEx')) === true;
+    testC = isPalindrome(ab('cmFjZWNhcg==')) === true;
 
     document.getElementById('tests').innerHTML =
         `<ul>
